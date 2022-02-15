@@ -4,6 +4,8 @@ import "react-calendar/dist/Calendar.css";
 import { Link } from "react-router-dom";
 import EditCalendar from "../Components/EditCalendar";
 import "./NavBar.css";
+import { MdClose } from "react-icons/md";
+import { FiMenu } from "react-icons/fi";
 
 function NavBar() {
   const [showNavBar, setShowNavBar] = useState(false);
@@ -14,21 +16,27 @@ function NavBar() {
 
   return (
     <div className="NavBar">
-      <button onClick={toggle}>+</button>
+      <button onClick={toggle}>
+        {showNavBar ? (
+          <MdClose className="navbutton-close" />
+        ) : (
+          <FiMenu className="navbutton-open" />
+        )}
+      </button>
       {showNavBar && (
         <nav>
-          <div className="NavLinkContainer">
-            <Link to="/">Home</Link>
-          </div>
-          <div className="NavLinkContainer">
-            <Link to="/edit">Edit</Link>
-          </div>
-          <div className="NavLinkContainer">
-            <Link to="/calendar">Calendar</Link>
-          </div>
-          <div className="NavLinkContainer">
-            <Link to="/info">Info</Link>
-          </div>
+          <Link to="/" className="navLink" onClick={toggle}>
+            <div className="NavLinkContainer">Home</div>
+          </Link>
+          <Link to="/edit" className="navLink" onClick={toggle}>
+            <div className="NavLinkContainer">Edit</div>
+          </Link>
+          <Link to="/calendar" className="navLink" onClick={toggle}>
+            <div className="NavLinkContainer">Calendar</div>
+          </Link>
+          <Link to="/info" className="navLink" onClick={toggle}>
+            <div className="NavLinkContainer">Info</div>
+          </Link>
         </nav>
       )}
     </div>

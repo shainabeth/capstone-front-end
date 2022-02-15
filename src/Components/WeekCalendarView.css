@@ -1,0 +1,74 @@
+.WeekCalendarView {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dateBoxContainer {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    border-color: #e1e1e1;
+    border-style: solid;
+    border-width: 1px;
+    border-left-style: none;
+}
+
+.dateBox {
+    height: 8em;
+    width: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-left-color: #e1e1e1;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.today {
+    border-color: purple;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.dateTitle {
+    height: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+}
+
+.dateBody {
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    display: block;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+}
+
+.grayDate {
+    background-color: lightslategray;
+}
+
+.redDate {
+    background-color: salmon;
+}
+
+.blueDate {
+    background-color: lightskyblue;
+
+}
+
+.greenDate {
+    background-color: lightseagreen;
+}

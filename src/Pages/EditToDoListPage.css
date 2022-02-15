@@ -1,0 +1,24 @@
+/* section {
+    background-color: lightgray;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+} */
+
+.EditToDoList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+section {
+    /* border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width: 1em; */
+    background-color: #f7f7f7;
+    padding: 3em;
+    margin: 1em;
+    width: fit-content;
+}

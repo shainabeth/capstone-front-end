@@ -3,3 +3,37 @@
     left: 15px;
     top: 15px;
 }
+
+.NavBar button {
+    background: transparent;
+    border: none;
+    user-select: none;
+}
+
+.navbutton-open {
+    color:black;
+}
+
+.navbutton-close {
+    color: darkgray;
+}
+
+.NavBar nav {
+    position: absolute;
+    top: 30px;
+    background-color: #fff;
+}
+
+.navLink  {
+    text-decoration: none;
+    color: black
+}
+
+.NavLinkContainer {
+    border-top-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    text-align: left;
+    width: 100px;
+    text-decoration: none;
+}

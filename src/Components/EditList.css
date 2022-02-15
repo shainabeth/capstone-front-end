@@ -1,0 +1,29 @@
+.EditList {
+    margin-bottom: 3em;
+}
+
+.EditList button {
+    background: transparent;
+    border: none;
+    user-select: none;
+}
+
+.EditList ul {
+    padding: 0;
+    margin: 0;
+    /* border-top-style: solid;
+    border-top-width: 1px; */
+    padding-top: 3px;
+    margin-bottom: 2em;
+}
+.EditList li {
+    list-style:none;
+    margin-bottom: 3px;
+    padding-bottom: 6px;
+    /* border: 0;
+    border-bottom-color: black;
+    border-style: solid;
+    border-bottom-width: 1px; */
+    display: flex;
+    justify-content: center;
+}

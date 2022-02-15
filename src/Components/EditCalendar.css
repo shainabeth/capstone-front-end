@@ -1,0 +1,21 @@
+.grayDate {
+    background-color: lightslategray;
+    color: black;
+}
+
+.redDate {
+    background-color: lightsalmon;
+    color: black;
+
+}
+
+.blueDate {
+    background-color: lightskyblue;
+    color: black;
+
+}
+
+.greenDate {
+    background-color: lightseagreen;
+    color: black;
+}

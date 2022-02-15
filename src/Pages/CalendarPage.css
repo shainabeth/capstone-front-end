@@ -1,6 +1,29 @@
 .Calendar {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    flex: 1;
+}
+
+.grayDate {
+    background-color: lightslategray;
+    color: black;
+}
+
+.redDate {
+    background-color: salmon;
+    color: black;
+
+}
+
+.blueDate {
+    background-color: lightskyblue;
+    color: black;
+
+}
+
+.greenDate {
+    background-color: lightseagreen;
+    color: black;
 }
