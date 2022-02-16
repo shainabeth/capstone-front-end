@@ -8,10 +8,15 @@ function EditCalendar({ date, onStartCycle }) {
   };
 
   return (
-    <div className="Calendar">
-      <label>Cycle duration:</label>{" "}
-      <input type="text" value={duration} onChange={onChangeDuration} />
-      <button onClick={() => onStartCycle(date, duration)}>Start cycle</button>
+    <div className="EditCalendar">
+      <label className="durationLabel">cycle duration:</label>{" "}
+      <input type="text" value={duration} onChange={onChangeDuration} />{" "}
+      <button
+        className="editButton"
+        onClick={() => onStartCycle(date, duration)}
+      >
+        Start Cycle
+      </button>
     </div>
   );
 }

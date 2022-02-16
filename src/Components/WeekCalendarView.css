@@ -6,10 +6,11 @@
 }
 
 .dateBoxContainer {
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
+    /* background-color: #fdebd6; */
     display: flex;
     flex-direction: row;
-    border-color: #e1e1e1;
+    border-color: #f7c892;
     border-style: solid;
     border-width: 1px;
     border-left-style: none;
@@ -22,13 +23,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border-left-color: #e1e1e1;
+    border-left-color: #f7c892;
     border-left-style: solid;
     border-left-width: 1px;
 }
 
 .today {
-    border-color: purple;
+    border-color:#e94a3d;
     border-style: solid;
     border-width: 1px;
 }
@@ -39,7 +40,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e8e8e8;
+    background-color: #f3c289;
+    font-weight: 750;
 }
 
 .dateBody {

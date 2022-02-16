@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="Footer">
-      <span classNam="FooterContent">
+      <span className="FooterContent">
         © Shaina Beth 2022. Developed at Ada Developers Academy
       </span>
       <br />

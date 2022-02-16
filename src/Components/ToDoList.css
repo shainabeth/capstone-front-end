@@ -1,18 +1,19 @@
 .ToDoList {
-    font-family: Helvetica, sans-serif;
-    border-color: #e1e1e1;
+    /* font-family: Helvetica, sans-serif; */
+    border-color: #f7c892;
     width: 100%;
 }
 
 .ToDoList h3 {
     margin: 0;
     padding: 0;
-    font-family: Helvetica, sans-serif;
+    /* font-family: Helvetica, sans-serif; */
     font-weight:100;
 }
 
 .ToDoList header {
-    background-color: darkgray;
+    /* background-color: darkgray; */
+    padding-top: 0px;
 }
 
 .ToDoList ul {
@@ -20,17 +21,29 @@
     margin: 0;
     border-top-style: solid;
     border-top-width: 1px;
-    border-color: #e1e1e1;
+    border-color: #f7c892;
     padding-top: 3px;
     width: 100%;
 }
 .ToDoList li {
     list-style:none;
-    margin-bottom: 3px;
+    /* margin-bottom: 3px; */
     padding-bottom: 6px;
     border: 0;
     border-style: solid;
     border-bottom-width: 1px;
-    border-color: #e1e1e1;
+    border-color: #f7c892;
     width: 100%;
+    color: rgb(114, 114, 114);
+    font-size: .85em;
+    line-height: 1.5em;
 }
+
+
+.checkBoxContainer {
+    display: inline;
+    user-select: none;
+}
+/* .checkBox path{
+    display: inline;
+} */

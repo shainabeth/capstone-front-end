@@ -7,21 +7,29 @@ import Header from "../Components/Header";
 function EditToDoListPage() {
   return (
     <div className="EditToDoList">
-      <h2>Edit To Do List</h2>
+      <h1>edit tasks</h1>
 
-      <section>
-        <h2>During the mentrual period</h2>
-        <h3>Day 1 until end of flow</h3>
-        <EditList phase="period" />
+      <section className="EditToDoListSection">
+        <h2>
+          during the{" "}
+          <span className="MenstrualPhaseTextColor">menstrual period</span>
+        </h2>
+        <h3>day 1 until end of flow</h3>
+        <EditList phase="menstrual" />
       </section>
-      <section>
-        <h2>During the follicular phase</h2>
-        <h3>Days 1 - 14</h3>
+      <section className="EditToDoListSection">
+        <h2>
+          during the{" "}
+          <span className="FollicularPhaseTextColor">follicular phase</span>
+        </h2>
+        <h3>days 1 - 14</h3>
         <EditList phase="follicular" />
       </section>
-      <section>
-        <h2>During the luteal phase</h2>
-        <h3>Days 14 - 28</h3>
+      <section className="EditToDoListSection">
+        <h2>
+          during the <span className="LutealPhaseTextColor">luteal phase</span>
+        </h2>
+        <h3>days 14 - 28</h3>
         <EditList phase="luteal" />
       </section>
     </div>

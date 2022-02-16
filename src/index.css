@@ -1,17 +1,72 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    sans-serif; */
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 100;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  background-color: #fef8f1;
 }
 
-code {
+h1 {
+  font-weight: 700;
+}
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 html, body, #root, #root>div {
   min-height: 100vh;
+}
+
+input[type=submit] {
+  background-color: #e94a3d; /* Green */
+  border: none;
+  color: #fef8f1;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+
+button {
+  background-color: #e94a3d; /* Green */
+  border: none;
+  color: #fef8f1;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.MenstrualPhaseTextColor {
+  color: salmon;
+}
+
+.FollicularPhaseTextColor {
+  color:lightskyblue ;
+}
+
+.LutealPhaseTextColor {
+  color: lightseagreen;
+}
+
+.MenstrualPhaseBackgroundColor {
+  background-color: salmon;
+}
+
+.FollicularPhaseBackgroundColor {
+  background-color:lightskyblue ;
+}
+
+.LutealPhaseBackgroundColor {
+  background-color: lightseagreen;
 }

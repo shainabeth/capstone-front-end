@@ -1,3 +1,15 @@
+.EditCalendar input {
+    width: 3em;
+}
+
+.editButton {
+    padding: .5em;
+}
+
+.durationLabel {
+    font-weight: 600;
+}
+
 .grayDate {
     background-color: lightslategray;
     color: black;

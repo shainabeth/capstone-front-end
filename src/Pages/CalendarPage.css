@@ -6,6 +6,32 @@
     flex: 1;
 }
 
+.react-calendar {
+    background-color: #fef8f1;
+    border-color: #e94a3d;
+}
+
+.react-calendar__navigation button {
+    padding: 0;
+    color: #e94a3d;
+
+}
+
+
+.react-calendar__navigation button:disabled {
+    background-color: transparent;
+}
+
+.react-calendar__viewContainer button {
+    color: rgb(114, 114, 114);
+}
+
+.Calendar button {
+    /* color: #e94a3d; */
+    font-size: .75em;
+    padding: auto;
+}
+
 .grayDate {
     background-color: lightslategray;
     color: black;

@@ -8,14 +8,17 @@
     background: transparent;
     border: none;
     user-select: none;
+    color: #e94a3d;
+    width: fit-content;
+    padding: 0;
 }
 
 .navbutton-open {
-    color:black;
+    /* color:black; */
 }
 
 .navbutton-close {
-    color: darkgray;
+    /* color: darkgray; */
 }
 
 .NavBar nav {
@@ -26,14 +29,15 @@
 
 .navLink  {
     text-decoration: none;
-    color: black
+    color: #fef8f1;
 }
 
 .NavLinkContainer {
     border-top-style: solid;
     border-width: 1px;
-    padding: 10px;
+    padding: 6px;
     text-align: left;
     width: 100px;
     text-decoration: none;
+    background-color: #e94a3d;
 }

@@ -109,7 +109,12 @@ function EditList({ phase }) {
           ) : (
             <>
               {task.task_name}
-              <button onClick={() => setEditingTask(task.task_id)}>
+              <button
+                onClick={() => {
+                  setEditingTask(task.task_id);
+                  setEditTaskValue(task.task_name);
+                }}
+              >
                 <BiPencil />
               </button>
               <button onClick={() => deleteItem(task.task_id)}>
@@ -160,8 +165,12 @@ function EditList({ phase }) {
       <ul>{listItems}</ul>
       <form onSubmit={handleSubmit}>
         <label>
-          New Task:{"  "}
-          <input type="text" value={task} onChange={handleChange} />{" "}
+          <input
+            type="text"
+            value={task}
+            onChange={handleChange}
+            placeholder="New Task"
+          />{" "}
         </label>
         <input type="submit" value="Submit" />
       </form>

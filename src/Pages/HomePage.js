@@ -8,8 +8,19 @@ import { URL } from "../constants";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 function HomePage({ phase, cycleDay, cycleStartDate, cycleDuration }) {
   const [tasks, setTasks] = useState([]);
+  const [phaseClassName, setPhaseClassName] = useState(
+    "MenstrualPhaseTextColor"
+  );
+
+  useEffect(() => {
+    setPhaseClassName(`${capitalizeFirstLetter(phase)}PhaseTextColor`);
+  }, [phase]);
 
   useEffect(() => {
     console.log(phase);
@@ -38,18 +49,28 @@ function HomePage({ phase, cycleDay, cycleStartDate, cycleDuration }) {
     <div className="Home">
       <section className="ToDoListSection">
         <header>
-          <h3>Today's To Do List</h3>
-          <h4>
-            Day {cycleDay} of Cycle: {phase} phase
-          </h4>
+          <h3>Today's Tasks</h3>
         </header>
-        <ToDoList
-          tasks={tasks}
-          setTasks={setTasks}
-          cycleDuration={cycleDuration}
-        />
+        {tasks.length === 0 ? (
+          <span className="defaultTask">
+            {" "}
+            No tasks?! Add them on the edit page!
+          </span>
+        ) : (
+          <ToDoList
+            tasks={tasks}
+            setTasks={setTasks}
+            cycleDuration={cycleDuration}
+          />
+        )}
       </section>
       <br />
+      <h4>
+        Day {cycleDay} of Cycle:{" "}
+        <span className={phaseClassName}>
+          {phase} {phase !== "menstrual" ? "phase" : "period"}
+        </span>
+      </h4>
       <br />
       <WeekCalendarView
         cycleStartDate={cycleStartDate}

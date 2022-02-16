@@ -1,6 +1,7 @@
 import "./ToDoList.css";
 import axios from "axios";
 import { URL } from "../constants";
+import { GrCheckbox, GrCheckboxSelected } from "react-icons/gr";
 
 function ToDoList({ tasks, setTasks, cycleDuration }) {
   const wasCompletedThisCycle = (date) => {
@@ -55,12 +56,14 @@ function ToDoList({ tasks, setTasks, cycleDuration }) {
     const wasCompleted = wasCompletedThisCycle(task.last_completed_date);
     return (
       <li key={task.task_id}>
-        <input
-          type="checkbox"
-          checked={wasCompleted}
-          onChange={() => handleCheckBox(task)}
-        />
-        {wasCompleted ? <strike>{task.task_name}</strike> : task.task_name}
+        <div className="checkBoxContainer" onClick={() => handleCheckBox(task)}>
+          {wasCompleted ? (
+            <GrCheckboxSelected className="checkBox" />
+          ) : (
+            <GrCheckbox className="checkBox" />
+          )}{" "}
+          {wasCompleted ? <strike>{task.task_name}</strike> : task.task_name}
+        </div>
       </li>
     );
   });

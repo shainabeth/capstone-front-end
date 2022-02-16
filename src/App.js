@@ -50,7 +50,7 @@ function App() {
     const cycleDay = Math.floor(diffInDays % cycleDuration);
     setCycleDay(Math.floor(cycleDay + 1));
     if (cycleDay < 7) {
-      setPhase("period");
+      setPhase("menstrual");
     } else if (cycleDay < cycleDuration / 2) {
       setPhase("follicular");
     } else {
